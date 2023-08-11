@@ -38,5 +38,28 @@ library(tidyverse)
 
     ```{r}
     ggplot(data = starwars, aes(x = height, y = mass)) +
-      geom_point(aes(color = sex))
+      geom_point(aes(color = gender))
     ```
+
+## Calculate summary statistics
+
+use mean() function to find means
+
+use std() to find standard deviation
+
+```{r}
+mean_height <- mean(starwars$height, na.rm = TRUE)
+
+mean_height
+```
+
+find and store SD of character heights:
+
+```{r}
+sd_height <- sd(starwars$height, na.rm = TRUE)
+sd_height
+```
+
+## In-line reporting using code outputs
+
+the mean height of star war characters is `r mean_height` cm with a standard deviation of 34.8 cm.
