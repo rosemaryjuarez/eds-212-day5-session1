@@ -13,3 +13,30 @@ execute:
 ```{r}
 library(tidyverse)
 ```
+
+# Explore Star Wars dataset
+
+-   look at the first 6 lines of star wars
+
+    ```{r}
+    head(starwars)
+    ```
+
+-   find the dimensions of starwars
+
+    ```{r}
+    dim(starwars)
+    ```
+
+-   make a histogram of character heights
+
+    ```{r}
+    ggplot(data = starwars, aes(x = height)) + geom_histogram(fill = 'brown', color = 'white')
+    ```
+
+-   make a scatterplot of height vs weight
+
+    ```{r}
+    ggplot(data = starwars, aes(x = height, y = mass)) +
+      geom_point(aes(color = sex))
+    ```
