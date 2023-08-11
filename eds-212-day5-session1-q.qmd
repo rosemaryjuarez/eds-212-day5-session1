@@ -1,0 +1,15 @@
+---
+title: "eds-212-day5-session1-qq"
+format:
+    html:
+      code-fold: true
+      code-summary: 'Show me the code!'
+editor: visual
+execute: 
+  echo: true
+  warning: false
+---
+
+```{r}
+library(tidyverse)
+```
